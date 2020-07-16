@@ -7,3 +7,20 @@ body {
 main {
     flex-grow: 1;
 }
+.main-body{
+    min-width: 95vw;
+}
+.table-bg{
+    background-color: rgb(82, 57, 43);
+}
+
+.paper-bg{
+    background-color: rgb(255, 234, 188);
+}
+.font-standard{
+    font-family: 'Fondamento', cursive;
+}
+
+.font-handwritten{
+    font-family: 'Nothing You Could Do', cursive;
+}
