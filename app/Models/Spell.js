@@ -1,6 +1,7 @@
-export default class Value {
+export default class Spell {
     constructor(data) {
         this.title = data.title
+
     }
 
     get Template() {
