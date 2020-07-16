@@ -1,17 +1,22 @@
 import Spell from "./Models/Spell.js";
 
 let _state = {
-  activeSpell: new Spell({ title: "Spell" }),
+  
+  /** @type {string[]} */
+  spellList: [],
   /** @type {Spell[]} */
-  spells: []
+  spellbook: [],
+  /** @type {Spell} */
+  selectedSpell: null
 };
 
 /** Collection of listeners to be called based on keyed state changes
  * @type {{[x:string]: function[]}}
  */
 let _listeners = {
-  activeSpell: [],
-  spells: []
+  spellList: [],
+  selectedSpell: [],
+  spellbook: []
 };
 
 //NOTE You should not need to change the code from this point down
