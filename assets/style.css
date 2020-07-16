@@ -34,7 +34,7 @@ main {
 }
 
 .school-conjuration{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/conjuration.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ main {
 }
 
 .school-divination{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/divination.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ main {
 }
 
 .school-enchantment{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/enchantment.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ main {
 }
 
 .school-evocation{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/evocation.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ main {
 }
 
 .school-illusion{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/illusion.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ main {
 }
 
 .school-necromancy{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/necromancy.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ main {
 }
 
 .school-transmutation{
-    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    background-image: url(https://kwilkins.com/dnd/resources/transmutation.png);
     min-width: 90%;
     min-height: 30vh;
     background-repeat: no-repeat;
