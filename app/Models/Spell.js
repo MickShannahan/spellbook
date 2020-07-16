@@ -32,7 +32,7 @@ export default class Spell {
         <h6 class="col-4 text-center font-title border-dark border-right">${this.concentration}
         </h6>
         <h6 class="col-4 text-center font-title">${this.level}</h6>
-        <h6 class="col-12 font-handwritten overflow-auto book-height">`
+        <h6 class="col-12 font-handwritten overflow-auto s s2 book-height">`
 
         this.desc.forEach(desc => template += desc)
 
