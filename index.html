@@ -16,7 +16,7 @@
 <body class="font-standard table-bg">
     <main class="container main-body w-100">
         <div class="row justify-content-between">
-            <div class="col-4 h-100 paper-bg text-center px-4 py-3">
+            <div class="col-4 h-100 paper-bg shadow-lg text-center px-4 py-3">
                 <h2 class=" mb-5">Spells</h2>
                 <div id="spell-list" class="row">
                     <!-- Spells Template -->
@@ -29,15 +29,32 @@
             </div>
             <div class="col-7 px-0 py-5">
                 Spell Book
-                <div class="row bg-primary py-1 px-2">
-                    <div class="col-12 paper-bg p-5">
+                <div class="row bg-primary shadow py-1 px-2">
+                    <div class="col-12 paper-bg shadow p-5">
 
                         <div class="row">
                             <div class="col-6 border-dark border-right">
                                 - My spells -
+                                <div id="my-spells" class="row">
+                                    <div class="col-12 text-capitalize">
+                                        ~my spell Name~
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-6">
-                                spell decription goes here
+                                <div class="row">
+                                    <h3 class="col-12 text-center">school</h3>
+                                    <img src="" alt="spell image goes here" class="col-12">
+                                    <h2 class=" col-12 text-center">Title of the spell goes here</h2>
+                                    <h5 class="col-4">Casting Time</h5>
+                                    <h5 class="col-4">components</h5>
+                                    <h5 class="col-4">range</h5>
+                                    <h6 class="col-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sapiente odit rerum
+                                        voluptate, earum at facere cumque itaque, ab laboriosam reiciendis totam fuga
+                                        eius expedita nihil quia! Voluptate quos expedita mollitia!</h6>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -65,6 +82,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
