@@ -20,9 +20,10 @@ class SpellsService {
       _store.commit("spellList", res.data.map(rawSpellData => rawSpellData))
     }).catch(err => console.error(err))
   }
-  addSpellToBook(spellId) {
+  selectSpell(spellId) {
     _bcwApi.get("spells/" + spellId).then(res => {
       console.log(res.data);
+      _store.commit("selectedSpell", new Spell(res.data))
     }).catch(err => console.error(err))
   }
 

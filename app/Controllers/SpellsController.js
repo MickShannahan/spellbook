@@ -3,6 +3,8 @@ import _store from "../store.js";
 import Spell from "../Models/Spell.js";
 
 //Private
+
+
 function _drawSpellList() {
   let template = ""
   _store.State.spellList.forEach(spell => template += Spell.generateSpellListTemplate(spell))
@@ -12,14 +14,13 @@ function _drawSpellList() {
 
 function _drawSpellbook() {
   let template = ""
-  _store.State.spellbook.forEach(spell => template += spell.Template)
+  _store.State.spellbook.forEach(spell => template += spell.generateSpellBook(spell))
   document.getElementById("spellbook").innerHTML = template
 }
 
 
 // draws spell selected from the spellbook //
 function _drawSelectedSpell() {
-  let template = ""
   document.getElementById("selected-spell").innerHTML = _store.State.selectedSpell.SelectedSpellTemplate
 }
 
@@ -32,7 +33,7 @@ export default class SpellsController {
 
   }
 
-  addSpellToBook(spellId) {
-    SpellsService.addSpellToBook(spellId)
+  selectSpell(spellId) {
+    SpellsService.selectSpell(spellId)
   }
 }
