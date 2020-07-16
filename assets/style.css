@@ -17,7 +17,7 @@ main {
 .paper-bg{
     background-color: rgb(255, 234, 188);
 }
-.font-standard{
+.font-title{
     font-family: 'Fondamento', cursive;
 }
 
@@ -28,7 +28,7 @@ main {
 .school-abjuration{
     background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
     min-width: 90%;
-    min-height: 30vh;
+    min-height: 35vh;
     background-repeat: no-repeat;
  background-position: center;
 }
