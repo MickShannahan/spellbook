@@ -24,3 +24,67 @@ main {
 .font-handwritten{
     font-family: 'Nothing You Could Do', cursive;
 }
+
+.school-abjuration{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-conjuration{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-divination{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-enchantment{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-evocation{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-illusion{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-necromancy{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
+
+.school-transmutation{
+    background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
+    min-width: 90%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+ background-position: center;
+}
