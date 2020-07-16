@@ -24,6 +24,7 @@ class SpellsService {
     _bcwApi.get("spells/" + spellId).then(res => {
       console.log(res.data);
       _store.commit("selectedSpell", new Spell(res.data))
+      console.log(_store.State.selectedSpell);
     }).catch(err => console.error(err))
   }
 

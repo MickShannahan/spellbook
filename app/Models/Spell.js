@@ -21,18 +21,23 @@ export default class Spell {
         <h2 class=" col-12 text-center">${this.name}</h2>
         <h6 class="col-4 text-center font-title border-dark border-right">${this.casting_time}
         </h6>
-        <h6 class="col-4 text-center font-title border-dark border-right">${this.components.forEach(comp => template += comp)}
-        </h6>
+        <h6 class="col-4 text-center font-title border-dark border-right">`
+
+        this.components.forEach(comp => template += comp)
+
+        template += `</h6>
         <h6 class="col-4 text-center font-title">${this.range}</h6>
         <h6 class="col-4 text-center font-title border-dark border-right">${this.duration}
         </h6>
         <h6 class="col-4 text-center font-title border-dark border-right">${this.concentration}
         </h6>
         <h6 class="col-4 text-center font-title">${this.level}</h6>
-        <h6 class="col-12 font-handwritten">${
-            this.desc.forEach(desc => template += desc)
-            }!</h6>
-        `
+        <h6 class="col-12 font-handwritten overflow-auto book-height">`
+
+        this.desc.forEach(desc => template += desc)
+
+        template += `</h6>`
+
         return template
     }
     static generateSpellListTemplate(spell) {
