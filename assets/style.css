@@ -24,6 +24,13 @@ body {
     scrollbar-width: none;
 }
 
+.book-height {
+    height: 80vh;
+}
+
+.description-height {
+    height: 25vh;
+}
 .table-bg{
     background-color: rgb(82, 57, 43);
 }
