@@ -14,8 +14,8 @@ function _drawSpellList() {
 
 function _drawSpellbook() {
   let template = ""
-  _store.State.spellbook.forEach(spell => template += spell.generateSpellBook(spell))
-  document.getElementById("spellbook").innerHTML = template
+  _store.State.spellbook.forEach(spell => template += spell.SpellBookTemplate)
+  document.getElementById("my-spells").innerHTML = template
 }
 
 
@@ -35,5 +35,9 @@ export default class SpellsController {
 
   selectSpell(spellId) {
     SpellsService.selectSpell(spellId)
+  }
+
+  addSpellToBook() {
+    SpellsService.addSpellToBook()
   }
 }
