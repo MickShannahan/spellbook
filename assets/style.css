@@ -10,8 +10,18 @@ body {
 .main-body{
     min-width: 95vw;
 }
+
 .spell-list{
     height: 87vh;
+}
+
+.s::-webkit-scrollbar {
+    display: none;
+}
+
+.s2 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .table-bg{
