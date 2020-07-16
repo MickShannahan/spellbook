@@ -10,7 +10,7 @@ const _bcwApi = axios.create({
 class SpellsService {
   constructor() {
     this.getSpellList()
-    // this.getSpellbook()
+    this.getSpellbook()
     // this.getSelectedSpell()
   }
 
@@ -27,10 +27,16 @@ class SpellsService {
       console.log(_store.State.selectedSpell);
     }).catch(err => console.error(err))
   }
+  addSpellToBook() {
+    _bcwApi.post("mick/spells").then(res => {
+      console.log(res);
+      _store.commit("spellbook", _store.State.selectedSpell)
+    }).catch(err => console.error(err))
+  }
 
 
   getSpellbook() {
-    _bcwApi.get("spells").then(res => {
+    _bcwApi.get("mick/spells").then(res => {
       _store.commit("spellbook", res.data.results.map(rawSpellData => new Spell(rawSpellData)))
     }).catch(err => console.error(err))
   }

@@ -12,18 +12,19 @@ body {
 }
 
 .spell-list{
-    height: 87vh;
+    height: 82vh;
 }
 
 .s::-webkit-scrollbar {
 width: 2px;
 }
 .s::-webkit-scrollbar-track {
-  background: rgb(168, 114, 77);
+  background: rgb(5, 5, 5 .5);
   border-radius: 45%;
 }
 .s::-webkit-scrollbar-thumb {
-    color: black;
+    width: 4px;
+    background: black;
     border-radius: 45%;
 }
 
@@ -57,7 +58,7 @@ width: 2px;
 .school-Abjuration{
     background-image: url(https://kwilkins.com/dnd/resources/abjuration.png);
     min-width: 90%;
-    min-height: 35vh;
+    min-height: 30vh;
     background-repeat: no-repeat;
  background-position: center;
 }
