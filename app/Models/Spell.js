@@ -14,7 +14,8 @@ export default class Spell {
     }
 
     get SelectedSpellTemplate() {
-        let template = `
+        let template = ''
+        template += `
         <h3 class="col-12 font-title text-center">${this.school}</h3>
         <div class="col-12 school-${this.school}"></div>
         <h2 class=" col-12 text-center">${this.name}</h2>
@@ -36,7 +37,7 @@ export default class Spell {
     }
     static generateSpellListTemplate(spell) {
         return `
-        <button class="btn col-12 p-1  text-capitalize"
+        <button class="btn col-12 p-1 text-capitalize"
         onclick="app.spellsController.selectSpell('${spell.id}')">
         ~ ${spell.name} ~
     </button>
