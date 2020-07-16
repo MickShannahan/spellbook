@@ -26,6 +26,7 @@ export default class Spell {
         this.components.forEach(comp => template += comp)
 
         template += `</h6>
+
         <h6 class="col-4 text-center font-title">${this.range}</h6>
         <h6 class="col-4 text-center font-title border-dark border-right">${this.duration}
         </h6>
@@ -38,6 +39,7 @@ export default class Spell {
 
         template += `</h6>`
 
+        
         return template
     }
     static generateSpellListTemplate(spell) {
