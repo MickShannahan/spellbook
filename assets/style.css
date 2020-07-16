@@ -16,7 +16,15 @@ body {
 }
 
 .s::-webkit-scrollbar {
-    display: none;
+width: 2px;
+}
+.s::-webkit-scrollbar-track {
+  background: rgb(168, 114, 77);
+  border-radius: 45%;
+}
+.s::-webkit-scrollbar-thumb {
+    color: black;
+    border-radius: 45%;
 }
 
 .s2 {
