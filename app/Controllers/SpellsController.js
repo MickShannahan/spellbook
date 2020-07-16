@@ -10,7 +10,7 @@ function _drawSpellList() {
 }
 
 
-function _drawSpellbook {
+function _drawSpellbook() {
   let template = ""
   _store.State.spellbook.forEach(spell => template += spell.Template)
   document.getElementById("spellbook").innerHTML = template
@@ -18,7 +18,7 @@ function _drawSpellbook {
 
 
 // draws spell selected from the spellbook //
-function _drawSelectedSpell {
+function _drawSelectedSpell() {
   let template = ""
   document.getElementById("selected-spell").innerHTML = _store.State.activePokemon.Template
 }
@@ -26,9 +26,9 @@ function _drawSelectedSpell {
 //Public
 export default class SpellsController {
   constructor() {
-    _store.subscribe("spell-list"), _drawSpellList;
+    _store.subscribe("spell-list", _drawSpellList);
     _store.subscribe("spells", _drawSpellbook);
-    _store.subscribe("selected-spell"), _drawSelectedSpell
+    _store.subscribe("selected-spell", _drawSelectedSpell)
    
   }
 }
