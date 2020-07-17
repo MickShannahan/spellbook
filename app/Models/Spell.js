@@ -2,6 +2,7 @@ export default class Spell {
     constructor(data) {
         this.name = data.name
         this.index = data.index
+        this._id = data._id || data.id
         this.school = data.school
         this.casting_time = data.casting_time
         this.range = data.range
@@ -55,6 +56,7 @@ export default class Spell {
     }
 
     get SpellBookTemplate() {
+        debugger
         return `
         <button class="btn col-12 p-1 text-capitalize"
         onclick="app.spellsController.selectSpell('${this.index}')">

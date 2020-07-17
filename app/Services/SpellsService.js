@@ -37,7 +37,7 @@ class SpellsService {
     }
   }
   removeSpellFromBook() {
-    let spellToRemove = _store.State.selectedSpell.index
+    let spellToRemove = _store.State.selectedSpell._id
     _bcwApi.delete("mick/spells" + spellToRemove).then(res => {
       console.log(res);
       this.getSpellbook
