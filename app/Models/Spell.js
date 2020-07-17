@@ -56,7 +56,6 @@ export default class Spell {
     }
 
     get SpellBookTemplate() {
-        debugger
         return `
         <button class="btn col-12 p-1 text-capitalize"
         onclick="app.spellsController.selectSpell('${this.index}')">

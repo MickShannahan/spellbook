@@ -29,7 +29,8 @@ class SpellsService {
   }
   addSpellToBook(spellId) {
     let prop = _store.State.spellbook.find(spell => spell.index == spellId)
-    if (prop.index != spellId) {
+    console.log(prop, spellId);
+    if (prop == undefined) {
       _bcwApi.post("mick/spells", _store.State.selectedSpell).then(res => {
         console.log(res);
         this.getSpellbook()
