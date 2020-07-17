@@ -16,6 +16,8 @@ function _drawSpellbook() {
   let template = ""
   console.log(_store.State);
   _store.State.spellbook.forEach(spell => template += spell.SpellBookTemplate)
+  template += `<button class="btn btn-block border-danger px-5 mx-5 my-2"
+  onclick="app.spellsController.removeSpellFromBook()">Remove spell from book</button>`
   document.getElementById("my-spells").innerHTML = template
 }
 

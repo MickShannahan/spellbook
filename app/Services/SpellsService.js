@@ -38,10 +38,10 @@ class SpellsService {
     }
   }
   removeSpellFromBook() {
-    let spellToRemove = _store.State.selectedSpell._id
-    _bcwApi.delete("mick/spells" + spellToRemove).then(res => {
+    let spellToRemove = _store.State.spellbook.find(spell => spell.name == _store.State.selectedSpell.name)
+    _bcwApi.delete("mick/spells/" + spellToRemove._id).then(res => {
       console.log(res);
-      this.getSpellbook
+      this.getSpellbook()
     }).catch(err => console.error(err))
   }
 
