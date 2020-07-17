@@ -2,7 +2,7 @@ export default class Spell {
     constructor(data) {
         this.name = data.name
         this.index = data.index
-        this._id = data._id || data.id
+        this._id = data._id
         this.school = data.school
         this.casting_time = data.casting_time
         this.range = data.range
@@ -49,17 +49,24 @@ export default class Spell {
     static generateSpellListTemplate(spell) {
         return `
         <button class="btn col-12 p-1 text-capitalize"
-        onclick="app.spellsController.selectSpell('${spell.id}')">
+        onclick="app.spellsController.selectSpell('${spell._id}')">
         ~ ${spell.name} ~
     </button>
         `
     }
 
-    static SpellBookTemplate(spell) {
+    get SpellBookTemplate() {
+        let name = this.name.toLowerCase().split(' ')
+        let index = ''
+        for (let i = 0; i < name.length; i++) {
+            index += name[i]
+            if (i != name.length - 1)
+                index += '-'
+        }
         return `
         <button class="btn col-12 p-1 text-capitalize"
-        onclick="app.spellsController.selectSpell('${spell.id}')">
-        ~ ${spell.name} ~
+        onclick="app.spellsController.selectSpell('${index}')">
+        ~ ${this.name} ~
     </button>
         `
     }
