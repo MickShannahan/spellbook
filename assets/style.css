@@ -19,7 +19,7 @@ body {
 width: 2px;
 }
 .s::-webkit-scrollbar-track {
-  background: rgb(5, 5, 5 .5);
+  background: rgb(120, 120, 5 .5);
   border-radius: 45%;
 }
 .s::-webkit-scrollbar-thumb {
@@ -38,7 +38,7 @@ width: 2px;
 }
 
 .description-height {
-    height: 25vh;
+    height: 14vw;
 }
 .table-bg{
     background-color: rgb(82, 57, 43);

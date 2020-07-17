@@ -10,7 +10,8 @@ export default class Spell {
         this.level = data.level
         this.ritual = data.ritual
         this.concentration = data.concentration
-        this.desc = data.desc
+        this.description = data.description || data.desc.join('\n')
+        this.user = data.user || null
     }
 
     get SelectedSpellTemplate() {
@@ -35,11 +36,13 @@ export default class Spell {
         <h6 class="col-4 text-center font-title">${this.level}</h6>
         <h6 class="col-12 font-handwritten overflow-auto s s2 description-height">`
 
-        this.desc.forEach(desc => template += desc)
+        template += this.description
 
         template += `</h6>`
 
-        
+        template += `<button class="btn btn-block" onclick="app.spellsController.addSpellToBook('${this.index}')">Add spell to book</button>`
+
+
         return template
     }
     static generateSpellListTemplate(spell) {
