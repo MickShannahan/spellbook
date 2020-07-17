@@ -55,11 +55,11 @@ export default class Spell {
         `
     }
 
-    get SpellBookTemplate() {
+    static SpellBookTemplate(spell) {
         return `
         <button class="btn col-12 p-1 text-capitalize"
-        onclick="app.spellsController.selectSpell('${this.index}')">
-        ~ ${this.name} ~
+        onclick="app.spellsController.selectSpell('${spell.id}')">
+        ~ ${spell.name} ~
     </button>
         `
     }

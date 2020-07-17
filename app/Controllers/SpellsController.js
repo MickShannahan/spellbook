@@ -15,7 +15,7 @@ function _drawSpellList() {
 function _drawSpellbook() {
   let template = ""
   console.log(_store.State);
-  _store.State.spellbook.forEach(spell => template += spell.SpellBookTemplate)
+  _store.State.spellbook.forEach(spell => template += Spell.generateSpellListTemplate(spell))
   document.getElementById("my-spells").innerHTML = template
 }
 
