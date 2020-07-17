@@ -49,7 +49,7 @@ export default class Spell {
     static generateSpellListTemplate(spell) {
         return `
         <button class="btn col-12 p-1 text-capitalize"
-        onclick="app.spellsController.selectSpell('${spell._id}')">
+        onclick="app.spellsController.selectSpell('${spell.id}')">
         ~ ${spell.name} ~
     </button>
         `
